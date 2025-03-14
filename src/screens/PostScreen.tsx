@@ -3,21 +3,21 @@ import { View, FlatList, ActivityIndicator, RefreshControl } from 'react-native'
 import { usePosts } from '../context/Posts.context';
 import Item from '../components/Item/Item';
 import Search from '../components/Search/Search';
-import './global.css';
+import { PostStyle } from './Post.styles';
 
 const PostScreen = () => {
   const { posts, fetchNextUserPosts, refreshPosts, searchQuery } = usePosts();
 
   useEffect(() => {
-    if (posts.length === 0) fetchNextUserPosts();
-  }, []);
+    if (posts.length === 0) {fetchNextUserPosts();}
+  }, [fetchNextUserPosts, posts.length]);
 
   const filteredPosts = searchQuery
     ? posts.filter(post => post.title.toLowerCase().includes(searchQuery))
     : posts;
 
   return (
-    <View className="bg-slate-600 flex-1 items-center justify-center" >
+    <View style={PostStyle.container}>
       <Search />
       <FlatList
         data={filteredPosts}

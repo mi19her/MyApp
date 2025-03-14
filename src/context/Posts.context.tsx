@@ -35,7 +35,7 @@ const PostsProvider: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   };
 
   const fetchNextUserPosts = async () => {
-    if (currentUser > 5) return;
+    if (currentUser > 5) {return;}
     try {
       const response = await fetch(`https://jsonplaceholder.typicode.com/users/${currentUser}/posts`);
       const newPosts = await response.json();
@@ -51,7 +51,7 @@ const PostsProvider: React.FC<{ children: React.ReactNode }> = ({ children }) =>
 
   const refreshPosts = async () => {
     try {
-      setPosts([]); 
+      setPosts([]);
       setCurrentUser(1);
       await AsyncStorage.removeItem('posts');
       await fetchNextUserPosts();

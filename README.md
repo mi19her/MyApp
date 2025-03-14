@@ -21,7 +21,7 @@ Este proyecto es una aplicación móvil desarrollada con **React Native** utiliz
 - **AsyncStorage**
 - **Axios** para llamadas a API
 - **Jest + React Testing Library** para pruebas unitarias
-
+- **Eslint + Pretier** para codigo limpio y escalable
 
 ## 📂 Estructura del Proyecto
 ```plaintext
@@ -44,7 +44,7 @@ Este proyecto es una aplicación móvil desarrollada con **React Native** utiliz
 
 ### **2️⃣ Clonar el repositorio**
 ```bash
-git clone https://github.com/tu-usuario/tu-repo.git
+git clone git@github.com:mi19her/MyApp.git
 cd MyApp
 ```
 

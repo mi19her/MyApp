@@ -6,7 +6,7 @@ jest.mock('../context/Posts.context', () => ({
   usePosts: jest.fn(() => ({
     posts: [
       { id: 1, userId: 1, title: 'First Post', body: 'This is a post' },
-      { id: 2, userId: 1, title: 'Second Post', body: 'Another post' }
+      { id: 2, userId: 1, title: 'Second Post', body: 'Another post' },
     ],
     fetchNextUserPosts: jest.fn(),
     refreshPosts: jest.fn(),
