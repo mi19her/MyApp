@@ -1,6 +1,44 @@
 # OSX
 #
 .DS_Store
+# VSCode
+.vscode/
+*.code-workspace
+
+# IntelliJ / JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+# Archivos de compilación
+dist/
+build/
+
+# Archivos de compilación de Android
+android/.gradle/
+android/app/build/
+android/app/release/
+android/app/debug/
+android/.idea/
+android/local.properties
+android/app/src/main/assets/index.android.bundle
+android/app/src/main/assets/sourcemaps/
+android/app/src/main/res/raw/
+android/app/src/main/res/xml/
+android/app/src/main/res/drawable-*
+
+# Archivos de compilación de iOS
+ios/Pods/
+ios/Podfile.lock
+ios/.DS_Store
+ios/build/
+ios/DerivedData/
+ios/.idea/
+ios/.vscode/
+
+# Reactotron 
+ReactotronConfig.js
+reactotron.log
 
 # Xcode
 #
